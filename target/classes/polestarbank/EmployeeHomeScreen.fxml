@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="polestarbank.EmployeeHomeScreenController">
+    <left>
+        <VBox prefHeight="487.0" prefWidth="120.0" spacing="15.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#createNewEmployeePressed" prefHeight="31.0" prefWidth="163.0" style="-fx-background-color: #3c4f6f#3c4f6f #3c4f6f#3c4f6f;" text="Register new Employee" textFill="#fcfcfc" />
+                <Button mnemonicParsing="false" onAction="#transferPressed" prefHeight="30.0" prefWidth="164.0" style="-fx-background-color: #3c4f6f#3c4f6f #3c4f6f#3c4f6f;" text="Transfer" textFill="#fffefe" />
+                <Button mnemonicParsing="false" onAction="#transcationHistoryButtonPressed" prefHeight="29.0" prefWidth="167.0" style="-fx-background-color: #3c4f6f#3c4f6f #3c4f6f#3c4f6f;" text="Transaction history" textFill="#fcfcfc" />
+                <Button mnemonicParsing="false" onAction="#customerListPressed" prefHeight="32.0" prefWidth="169.0" style="-fx-background-color: #3c4f6f#3c4f6f #3c4f6f#3c4f6f;" text="Customer list" textFill="#f8f7f7" />
+                <Button mnemonicParsing="false" onAction="#updateExistingCustomerPressed" prefHeight="32.0" prefWidth="170.0" style="-fx-background-color: #3c4f6f#3c4f6f #3c4f6f#3c4f6f;" text="Update existing customer" textFill="#fcf9f9" />
+                <Button fx:id="approveLoan" mnemonicParsing="false" onAction="#approveLoanPressed" prefHeight="31.0" prefWidth="171.0" style="-fx-background-color: #3c4f6f#3c4f6f #3c4f6f#3c4f6f;" text="Approve loan" textFill="#fcfcfc" />
+                <Button fx:id="closeButton1" mnemonicParsing="false" onAction="#logoutPressed" prefHeight="31.0" prefWidth="172.0" style="-fx-background-color: #3c4f6f#3c4f6f #3c4f6f#3c4f6f;" text="Log out" textFill="#f8f6f6" />
+                <CubicCurve controlX1="-93.190185546875" controlX2="38.79290771484375" controlY1="36.2600212097168" controlY2="-68.26586151123047" endX="15.809524536132812" endY="0.11130332946777344" fill="#b4cbf2" startX="-150.0" stroke="BLACK" />
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <AnchorPane fx:id="ap" prefHeight="534.0" prefWidth="721.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="130.0" layoutY="14.0" prefHeight="44.0" prefWidth="323.0" style="-fx-background-color: #3c4f6f;" text="                  Transfer" textAlignment="CENTER" textFill="#f2ecec">
+                    <font>
+                        <Font name="Arial Black" size="18.0" />
+                    </font>
+                </Label>
+                <AnchorPane layoutX="26.0" layoutY="87.0" prefHeight="127.0" prefWidth="530.0" style="-fx-background-color: #b4cbf2;">
+                    <children>
+                        <TextField fx:id="sdAccnum" layoutX="71.0" layoutY="10.0" prefHeight="30.0" prefWidth="178.0" promptText="Account number" />
+                        <Button layoutX="160.0" layoutY="55.0" mnemonicParsing="false" onAction="#searchSDAcc" prefHeight="22.0" prefWidth="86.0" style="-fx-background-color: #3c4f6f;" text="Search" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <Label layoutX="14.0" layoutY="12.0" text="From :">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="55.0">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <AnchorPane layoutX="260.0" prefHeight="140.0" prefWidth="407.0" style="-fx-background-color: #5381cf;">
+                            <children>
+                                <Label layoutX="22.0" layoutY="14.0" text="Customer Personal Info:" textFill="#fbfbfb">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="23.0" layoutY="51.0" text="Customer Firstname :" textFill="#fffefe" />
+                                <Label layoutX="23.0" layoutY="80.0" text="Customer Lastname :" textFill="WHITE" />
+                                <Label layoutX="23.0" layoutY="109.0" text="Current Balance :" textFill="WHITE" />
+                                <Text fx:id="sdFirstname" layoutX="151.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="118.5811767578125">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Text>
+                                <Text fx:id="sdLastname" layoutX="151.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="118.5811767578125">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Text>
+                                <Text fx:id="sdCurrentBalance" layoutX="151.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="118.5811767578125">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="25.0" layoutY="238.0" prefHeight="144.0" prefWidth="666.0" style="-fx-background-color: #b4cbf2;">
+                    <children>
+                        <TextField fx:id="reAccnum" layoutX="63.0" layoutY="11.0" prefHeight="30.0" prefWidth="188.0" promptText="Account number" />
+                        <Button layoutX="165.0" layoutY="49.0" mnemonicParsing="false" onAction="#searchREAcc" prefHeight="22.0" prefWidth="86.0" style="-fx-background-color: #3c4f6f;" text="Search" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <Label layoutX="21.0" layoutY="13.0" text="To :">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <AnchorPane layoutX="265.0" layoutY="3.0" prefHeight="143.0" prefWidth="402.0" style="-fx-background-color: #5381cf;">
+                            <children>
+                                <Label layoutX="23.0" layoutY="51.0" text="Customer Firstname :" textFill="#fffefe" />
+                                <Label layoutX="23.0" layoutY="80.0" text="Customer Lastname :" textFill="WHITE" />
+                                <Label layoutX="23.0" layoutY="109.0" text="Current Balance :" textFill="WHITE" />
+                                <Text fx:id="reFirstname" layoutX="151.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="118.5811767578125">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Text>
+                                <Text fx:id="reLastname" layoutX="151.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="118.5811767578125">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Text>
+                                <Text fx:id="reCurrentBalance" layoutX="151.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="118.5811767578125">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Text>
+                                <Label layoutX="22.0" layoutY="14.0" text="Customer Personal Info:" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+                <Label layoutX="301.0" layoutY="427.0" prefHeight="31.0" prefWidth="77.0" text="Amount :">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+                <Button fx:id="transferBTN" layoutX="567.0" layoutY="426.0" mnemonicParsing="false" onAction="#transferMoney" prefHeight="33.0" prefWidth="124.0" style="-fx-background-color: #3c4f6f;" text="Transfer" textFill="#fcfcfc">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="amount" layoutX="389.0" layoutY="425.0" prefHeight="36.0" prefWidth="169.0" promptText="SEK">
+               <font>
+                  <Font size="16.0" />
+               </font></TextField>
+                <Label fx:id="errorLabel" layoutX="174.0" layoutY="397.0" prefHeight="25.0" prefWidth="519.0" textAlignment="RIGHT" textFill="#da0808">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+            <Text fx:id="resultTxT" fill="#10b028" layoutX="292.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="399.4600830078125">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

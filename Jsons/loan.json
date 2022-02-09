@@ -1,0 +1,7 @@
+[{"IDnumber":"1975-0734", "salary":0.0, "loan_type":"Student Loan", "loan_amount":100000.0, "duration":36, "status":"pending..."},
+ {"IDnumber":"1989-2367", "salary":20000.0, "loan_type":"Personal Loan", "loan_amount":150000.0, "duration":12, "status":"pending..."},
+ {"IDnumber":"1994-8768", "salary":15000.0, "loan_type":"Personal Loan", "loan_amount":100000.0, "duration":36, "status":"pending..."},
+ {"IDnumber":"2005-9737", "salary":30000.0, "loan_type":"Mortgage Loan", "loan_amount":450000.0, "duration":84, "status":"pending..."},
+ {"IDnumber":"1985-2709", "salary":20000.0, "loan_type":"Personal Loan", "loan_amount":10000.0, "duration":24, "status":"pending..."},
+ {"IDnumber":"1997-4702", "salary":28000.0, "loan_type":"Small Business Loan", "loan_amount":300000.0, "duration":60, "status":"pending..."},
+ {"IDnumber":"1994-8768", "salary":20000.0, "loan_type":"Student Loan", "loan_amount":10000.0, "duration":24, "status":"pending..."}]

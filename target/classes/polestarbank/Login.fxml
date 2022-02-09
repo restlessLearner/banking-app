@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="polestarbank.LoginSceneController">
+    <right>
+        <AnchorPane prefHeight="609.0" prefWidth="428.0" style="-fx-background-color: #efefef;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="loginButton" layoutX="125.0" layoutY="362.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="35.0" prefWidth="187.0" style="-fx-background-color: #3c4f6f; -fx-background-radius: 10;" text="Log in" textFill="#f5f5f5">
+                    <font>
+                        <Font name="Arial" size="14.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="IDnumber" layoutX="84.0" layoutY="184.0" prefHeight="40.0" prefWidth="275.0" promptText="Enter your ID number" />
+                <Label layoutX="73.0" layoutY="44.0" prefHeight="62.0" prefWidth="279.0" text="         Secure Login     " textFill="#434d5e">
+                    <font>
+                        <Font name="Arial" size="24.0" />
+                    </font>
+                    <effect>
+                        <InnerShadow />
+                    </effect>
+                </Label>
+                <Label layoutX="82.0" layoutY="168.0" text="ID number">
+                    <font>
+                        <Font name="Arial" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="84.0" layoutY="254.0" text="Password">
+                    <font>
+                        <Font name="Arial" size="14.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="password" layoutX="81.0" layoutY="270.0" prefHeight="40.0" prefWidth="275.0" promptText="Enter your password" />
+                <Label layoutX="143.0" layoutY="453.0" prefHeight="23.0" prefWidth="140.0" text="Dont have an account?" textFill="#2f3f57">
+                    <font>
+                        <Font name="Arial" size="13.0" />
+                    </font>
+                </Label>
+                <Button fx:id="signUpBtn" layoutX="125.0" layoutY="418.0" mnemonicParsing="false" onAction="#signupBtn" prefHeight="35.0" prefWidth="186.0" style="-fx-background-color: #3c4f6f; -fx-background-radius: 10;" text="Sign up" textFill="#f9fafc">
+                    <font>
+                        <Font name="Arial" size="14.0" />
+                    </font>
+                </Button>
+                <Label fx:id="validateLabel" layoutX="37.0" layoutY="318.0" prefHeight="40.0" prefWidth="352.0" textFill="#c92525">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Button fx:id="forgotPassButton" layoutX="147.0" layoutY="516.0" mnemonicParsing="false" onAction="#forgotPassBtn" prefHeight="29.0" prefWidth="142.0" style="-fx-background-color: #3c4f6f; -fx-background-radius: 10;" text="Forgot Password?" textFill="#f9fafc">
+                    <font>
+                        <Font name="Arial" size="13.0" />
+                    </font>
+                </Button>
+                <Line endX="200.0" endY="-1.0" layoutX="151.0" layoutY="98.0" startX="-106.0" startY="-1.0" stroke="#344054" strokeWidth="2.0" />
+            </children>
+        </AnchorPane>
+    </right>
+    <left>
+        <AnchorPane prefHeight="609.0" prefWidth="424.0" style="-fx-background-color: #b4cbf2;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="130.0" layoutY="270.0" prefHeight="55.0" prefWidth="162.0" text="Polestar Bank" textFill="#3c4f6f">
+                    <font>
+                        <Font name="Arial Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Button fx:id="exitBtn" layoutX="145.0" layoutY="503.0" mnemonicParsing="false" onAction="#exit" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #3c4f6f; -fx-background-radius: 10;" text="Exit" textFill="WHITE">
+                    <font>
+                        <Font name="Arial" size="14.0" />
+                    </font>
+                </Button>
+                <Line endX="104.0" endY="33.0" layoutX="206.0" layoutY="219.0" startX="-95.0" startY="33.0" stroke="#2e384a" strokeWidth="2.0" />
+                <Circle fill="#e8e8e800" layoutX="210.0" layoutY="145.0" radius="94.0" stroke="#526280dc" strokeType="INSIDE" strokeWidth="2.0" />
+                <Line endX="185.0" layoutX="169.0" layoutY="260.0" startX="-100.0" stroke="#344054" strokeWidth="2.0" />
+                <Label layoutX="110.0" layoutY="578.0" text="Copyright(c). All Rights Reserved.">
+                    <font>
+                        <Font name="Arial" size="13.0" />
+                    </font></Label>
+                <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="107.0" layoutY="47.0">
+                    <image>
+                        <Image url="@Bank_symbol.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="EmployeeButton" layoutX="107.0" layoutY="424.0" mnemonicParsing="false" onAction="#employeePage" prefHeight="39.0" prefWidth="197.0" style="-fx-background-color: #3c4f6f; -fx-background-radius: 10;" text="Employees" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </left>
+</BorderPane>

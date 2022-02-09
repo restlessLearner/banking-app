@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="polestarbank.AccountDetailsController">
+    <children>
+        <Label layoutX="191.0" layoutY="41.0" style="-fx-background-color: #3c4f6f;" text="   Deactivate Account   " textFill="#fff9f9">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <Label layoutX="52.0" layoutY="110.0" text="Account number            : " />
+        <Label layoutX="45.0" layoutY="142.0" text="Your current balance is    :" />
+        <Label fx:id="errorLabel" layoutX="74.0" layoutY="269.0" prefHeight="31.0" prefWidth="445.0" textFill="#e40505">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+        <Label fx:id="balanceLabel" layoutX="191.0" layoutY="142.0" text="Label " />
+        <Label layoutX="67.0" layoutY="189.0" text="Password         :" />
+        <Button layoutX="291.0" layoutY="221.0" mnemonicParsing="false" onAction="#proceedButton" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #3c4f6f;" text="Continue" textFill="#f8f6f6">
+            <font>
+                <Font size="14.0" />
+            </font></Button>
+        <Label fx:id="accountNumberLabel" layoutX="180.0" layoutY="110.0" text="Label " />
+        <Button layoutX="183.0" layoutY="348.0" mnemonicParsing="false" onAction="#deavtivate" style="-fx-background-color: #e80303;" text="DEACTIVATE" textFill="#f5f3f3">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <CheckBox fx:id="checkBox" layoutX="77.0" layoutY="310.0" mnemonicParsing="false" text="I have read and agrred to the terms and conditions" />
+        <CubicCurve controlX1="-37.0" controlX2="46.0" controlY1="-129.0" controlY2="123.19497680664062" endX="100.0" endY="-29.999996185302734" fill="#b4cbf2" layoutX="443.0" layoutY="34.0" startX="-89.0" startY="4.853843688964844" stroke="BLACK" />
+        <PasswordField fx:id="passwordTextField" layoutX="170.0" layoutY="185.0" promptText="Enter your password" />
+    </children>
+</AnchorPane>

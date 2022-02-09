@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="polestarbank.TransactionController">
+    <children>
+        <TableView fx:id="tableView" layoutX="7.0" layoutY="149.0" prefHeight="219.0" prefWidth="276.0" style="-fx-background-color: #b4cbf2;">
+            <columns>
+                <TableColumn fx:id="col_date" text="Date" />
+                <TableColumn fx:id="col_senderAccountNumber" prefWidth="64.0" text="From" />
+                <TableColumn fx:id="col_destinationAccountNumber" prefWidth="60.0" text="To" />
+                <TableColumn fx:id="col_amount" prefWidth="63.0" text="Amount" />
+            </columns>
+        </TableView>
+        <TableView fx:id="tableView1" layoutX="286.0" layoutY="149.0" prefHeight="219.0" prefWidth="276.0">
+            <columns>
+                <TableColumn fx:id="col_date1" prefWidth="77.0" text="Date" />
+                <TableColumn fx:id="col_senderAccountNumber1" prefWidth="65.0" text="From" />
+                <TableColumn fx:id="col_destinationAccountNumber1" prefWidth="67.0" text="To" />
+                <TableColumn fx:id="col_amount1" prefWidth="64.0" text="Amount" />
+            </columns>
+        </TableView>
+        <Label layoutX="141.0" layoutY="38.0" prefHeight="40.0" prefWidth="258.0" style="-fx-background-color: #3c4f6f;" text="    Transfer  History" textFill="#fcf8f8">
+            <font>
+                <Font name="Arial Black" size="22.0" />
+            </font>
+        </Label>
+        <CubicCurve controlX1="-47.0" controlX2="50.0" controlY1="-106.39949035644531" controlY2="110.00000762939453" endX="136.0" endY="-17.000003814697266" fill="#b4cbf2" layoutX="421.0" layoutY="17.0" startX="-79.0" startY="21.000011444091797" stroke="BLACK" />
+        <Label layoutX="115.0" layoutY="113.0" style="-fx-background-color: #3c4f6f;" text="Received from:" textFill="#f8f7f7">
+            <font>
+                <Font name="Arial Black" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="402.0" layoutY="113.0" style="-fx-background-color: #3c4f6f;" text="Sent to:" textFill="#f5f2f2">
+            <font>
+                <Font name="Arial Black" size="17.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

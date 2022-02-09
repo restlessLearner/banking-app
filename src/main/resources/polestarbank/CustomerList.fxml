@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="722.0" style="-fx-background-color: #3c4f6f#3c4f6f #3c4f6f#3c4f6f;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="polestarbank.CustomerListTableController">
+    <children>
+        <TableView fx:id="customerSearchTableView" layoutX="8.0" layoutY="45.0" prefHeight="502.0" prefWidth="712.0">
+            <columns>
+                <TableColumn fx:id="idnumberTableColumn" prefWidth="65.0" text="ID number" />
+                <TableColumn fx:id="accounttypeTableColumn" prefWidth="87.0" text="Account_type" />
+                <TableColumn fx:id="firstnameTableColumn" prefWidth="65.0" text="First_name" />
+                <TableColumn fx:id="surnameTableColumn" prefWidth="73.0" text="Surname" />
+                <TableColumn fx:id="dobTableColumn" prefWidth="77.0" text="DOB" />
+                <TableColumn fx:id="emailTableColumn" prefWidth="75.0" text="Email" />
+                <TableColumn fx:id="phonenumberTableColumn" prefWidth="89.0" text="Phone_number" />
+                <TableColumn fx:id="cardnumberTableColumn" prefWidth="86.0" text="Card_number" />
+                <TableColumn fx:id="accountnumberTableColumn" prefWidth="96.0" text="Account_number" />
+            </columns>
+        </TableView>
+        <Label fx:id="searchcustomerLabel" layoutX="14.0" layoutY="15.0" text="Search customer" textFill="#fffefe">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="keywordTextField" layoutX="127.0" layoutY="11.0" prefHeight="26.0" prefWidth="560.0" promptText="Enter  customer ID number" />
+    </children>
+</Pane>
